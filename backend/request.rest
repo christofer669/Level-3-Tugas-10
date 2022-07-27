@@ -1,0 +1,28 @@
+GET http://localhost:5000/produk
+
+###
+GET http://localhost:5000/produk/1
+
+###
+POST http://localhost:5000/produk
+Content-Type: application/json
+
+{
+    "nama_produk":"Buku",
+    "keterangan":"Buku Tulis",
+    "harga":"5000",
+    "jumlah" : "1"
+}
+
+###
+PATCH  http://localhost:5000/produk/1
+Content-Type: application/json
+
+{
+    "nama_produk":"Pulpen",
+    "keterangan":"Pulpen Kantor",
+    "harga":"5000",
+    "jumlah" : "2"
+}
+###
+DELETE  http://localhost:5000/produk/2
